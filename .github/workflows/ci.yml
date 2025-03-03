@@ -93,7 +93,7 @@ jobs:
 
       - name: Install and configure pgrx
         run: |
-          cargo install --locked cargo-pgrx@0.12.9
+          cargo install --locked cargo-pgrx@0.13.0
           cargo pgrx init --pg${{ env.PG_MAJOR }} /usr/lib/postgresql/${{ env.PG_MAJOR }}/bin/pg_config
 
       - name: Install cargo-llvm-cov for coverage report
